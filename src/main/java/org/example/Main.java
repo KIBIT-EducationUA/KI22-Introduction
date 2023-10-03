@@ -7,10 +7,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Numbers summarizer v1.0.");
-        System.out.println("Summarizer ('+') or subtractor('-') ?");
+        System.out.println("Summarizer ('+'), subtractor('-'), multiplier(*), divider(/) ?");
         String operation = scanner.next();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 1; i++) {
             System.out.println("Number 1:");
             int number1 = scanner.nextInt();
 
@@ -20,6 +20,10 @@ public class Main {
             int result;
             if (operation.equals("-")) {
                 result = minus(number1, number2);
+            } else if (operation.equals("*")) {
+                result = number1 * number2;
+            } else if (operation.equals("/")) {
+                result = number1 / number2;
             } else {
                 result = plus(number1, number2);
             }
