@@ -1,0 +1,34 @@
+<DescriptionParserHandlerTest>
+    <body>
+        <span>
+            <div>
+                <span>Test: 3 &gt; 5</span>
+            </div>
+        </span>
+        <span>
+            <div>
+                <span>Test: 3 &gt; 5</span>
+            </div>
+        </span>
+        <span>
+            <div>
+                <span>Test: 3 &gt; 5</span>
+            </div>
+        </span>
+        <span>
+            <div>
+                <span>Test: 3 &gt; 5</span>
+            </div>
+        </span>
+        <span>
+            <div>
+                <span>Test: 3 &gt; 5</span>
+            </div>
+        </span>
+        <span>
+            <div>
+                <span>Test: 3 &gt; 5</span>
+            </div>
+        </span>
+    </body>
+</DescriptionParserHandlerTest>
