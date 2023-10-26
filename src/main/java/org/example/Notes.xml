@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<note
+        xmlns="https://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.w3schools.com/xml Notes.xsd">
+    <to>Grandmother Dorothy</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+    <createdDate>2023-09-09</createdDate>
+    <status updateDate="2023-10-10">sent</status>
+</note>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.w3schools.com"
+           xmlns="https://www.w3schools.com"
+           elementFormDefault="qualified">
+
+    <xs:element name="note">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="to" type="LimitedString" />
+                <xs:element name="from" type="xs:string"/>
+                <xs:element name="heading" type="xs:string"/>
+                <xs:element name="body" type="xs:string"/>
+                <xs:element name="createdDate" type="xs:date"/>
+                <xs:element name="status">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="status">
+                                <xs:attribute name="updateDate" type="xs:date" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+
+    </xs:element>
+    <xs:simpleType name="LimitedString">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="status" >
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="sent" />
+            <xs:enumeration value="deleted" />
+            <xs:enumeration value="N/A" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

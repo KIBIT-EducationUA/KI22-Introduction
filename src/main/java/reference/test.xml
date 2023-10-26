@@ -1,0 +1,23 @@
+<Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test.xsd">
+    <!--<Orders>-->
+    <Order>
+        <Address Type="Shipping">
+            <Name>Her Majesty Miss Ellen Adams</Name>
+            <Street>123 Maple Street</Street>
+            <City>Mill Valley</City>
+            <State>CA</State>
+            <Zip>-10999</Zip>
+            <Country>USA</Country>
+            <DateUpdated>2023-01-01T09:09:09+06:00</DateUpdated>
+        </Address>
+        <Address Type="Billing" Comment="Old unused address">
+            <Name>Tai Yee</Name>
+            <Street>8 Oak Avenue</Street>
+            <City>Old Town</City>
+            <State>PA</State>
+            <Zip>95819</Zip>
+            <Country>USA</Country>
+        </Address>
+        <DeliveryNotes></DeliveryNotes>
+    </Order>
+</Orders>

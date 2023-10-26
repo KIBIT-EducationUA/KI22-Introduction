@@ -1,0 +1,30 @@
+{
+  "Order": [
+    {
+      "Address": [
+        {
+          "Type": "Shipping",
+          "Name": "Her Majesty Miss Ellen Adams",
+          "Street": "123 Maple Street",
+          "City": "Mill Valley",
+          "State": "CA",
+          "Zip": "10999",
+          "Country": "USA",
+          "DateUpdated": "2023-01-01T09:09:09+06:00"
+        },
+        "Comment",
+        null,
+        {
+          "Type": "Billing",
+          "Name": "Tai Yee",
+          "Street": "8 Oak Avenue",
+          "City": "Old Town",
+          "State": "PA",
+          "Zip": "",
+          "Country": "USA"
+        }
+      ],
+      "Delivery Notes": "Please notify me before shipping."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Description": "This is menu layout",
+  "Version": "1.2.1",
+  "menu": [
+    {
+      "Header": "File",
+      "items": [
+        {
+          "title": "Create New",
+          "action": "createNewFile()"
+        },
+        {
+          "title": "Open File",
+          "action": "openFileSelector()"
+        },
+        {
+          "title": "Exit",
+          "action": "System.Exit(-1)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Orders">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded" minOccurs="1">
+                <xs:element name="Order">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="Address">
+                                <xs:complexType>
+                                    <xs:sequence maxOccurs="unbounded">
+                                        <xs:element name="Name">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="6"/>
+                                                    <xs:maxLength value="52"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Street" type="xs:string"/>
+                                        <xs:element name="City" type="xs:string"/>
+                                        <xs:element name="State" type="xs:string"/>
+                                        <xs:element name="Zip" type="xs:int"/>
+                                        <xs:element name="Country" type="xs:string"/>
+                                        <xs:element name="DateUpdated" type="xs:dateTime" minOccurs="0"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Type" type="AddressType"/>
+                                    <xs:attribute name="Comment" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DeliveryNotes" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="AddressType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Billing"/>
+            <xs:enumeration value="Shipping"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
