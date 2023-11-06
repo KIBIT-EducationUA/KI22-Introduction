@@ -1,7 +1,6 @@
-<Orders>
+<Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test.xsd">
     <Order>
-        <Address>
-            <Type>Shipping</Type>
+        <Address Type="Shipping">
             <Name>Her Majesty Miss Ellen Adams</Name>
             <Street>123 Maple Street</Street>
             <City>Mill Valley</City>
@@ -9,7 +8,7 @@
             <Zip>-10999</Zip>
             <Country>USA</Country>
         </Address>
-        <Address Type="123">
+        <Address Type="Billing">
             <Name>Tai Yee</Name>
             <Street>8 Oak Avenue</Street>
             <City>Old Town</City>
@@ -19,3 +18,7 @@
         </Address>
     </Order>
 </Orders>
+
+
+                    JSON
+

@@ -29,8 +29,7 @@
         <jar jarfile="${dist}/lib/MyProject-${DSTAMP}.jar" basedir="${build}"/>
     </target>
 
-    <target name="clean"
-            description="clean up">
+    <target name="clean">
         <!-- Delete the ${build} and ${dist} directory trees -->
         <delete dir="${build}"/>
         <delete dir="${dist}"/>

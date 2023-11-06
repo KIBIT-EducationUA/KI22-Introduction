@@ -2,21 +2,28 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Orders">
         <xs:complexType>
-            <xs:sequence maxOccurs="5">
+            <xs:sequence maxOccurs="unbounded">
                 <xs:element name="Order">
                     <xs:complexType>
                         <xs:sequence maxOccurs="unbounded">
                             <xs:element name="Address">
                                 <xs:complexType>
-                                    <xs:all>
-                                        <xs:element name="Name" type="str6_32"></xs:element>
-                                        <xs:element name="Street"></xs:element>
-                                        <xs:element name="City"></xs:element>
-                                        <xs:element name="State"></xs:element>
-                                        <xs:element name="Zip"></xs:element>
-                                        <xs:element name="Country"></xs:element>
-                                    </xs:all>
-                                    <xs:attribute name="Type" use="required"></xs:attribute>
+                                    <xs:sequence>
+                                        <xs:element name="Name">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="6"/>
+                                                    <xs:maxLength value="32"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Street"/>
+                                        <xs:element name="City"/>
+                                        <xs:element name="State"/>
+                                        <xs:element name="Zip"/>
+                                        <xs:element name="Country"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Type" use="optional"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -25,11 +32,4 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
-    <xs:simpleType name="str6_32">
-        <xs:restriction base="xs:string">
-            <xs:minLength value="6"/>
-            <xs:maxLength value="32"/>
-        </xs:restriction>
-    </xs:simpleType>
 </xs:schema>

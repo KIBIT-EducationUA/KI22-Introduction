@@ -1,5 +1,4 @@
-<Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="test.xsd">
-    <!--<Orders>-->
+<Orders>
     <Order>
         <Address Type="Shipping">
             <Name>Her Majesty Miss Ellen Adams</Name>
