@@ -3,6 +3,8 @@ package org.example;
 import java.util.Scanner;
 import org.apache.commons.lang3.StringUtils;
 
+import static org.example.TestUtils.plus;
+
 public class Main {
     public static void main(String[] args) {
         int number1;
@@ -33,9 +35,14 @@ public class Main {
         StringUtils.isAlphanumeric("");
     }
 
-    public static int plus(int num1, int num2) {
-        return num1 + num2;
-    }
+    /**
+     * This method sums two ints.
+     *
+     * @param num1 First int to sum
+     * @param num2 Second int to sum
+     * @return Sum of two ints
+     */
+
 
     public static int minus(int num1, int num2) {
         return num1 - num2;
